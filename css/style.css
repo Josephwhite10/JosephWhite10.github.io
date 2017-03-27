@@ -39,7 +39,11 @@ img {
 .dropdown-menu li a:hover{
     color: rgb(255,194,0);
     background-color: #00EE00;
+    color: #222;
 }
 .btn btn-primary dropdown-toggle{
    background-color:  #00EE00;
+}
+li {
+    color: rgb(255,194,0);
 }
