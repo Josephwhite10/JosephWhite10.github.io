@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+    <script>
+ var numberofSongs =  document.getElementById("maxValue").value;
+      var min = 1;
+      var list=[];
+      var selected=[];
+     
+     function createArray()
+     {
+         for (var i = min; i <= numberofSongs; i++)
+         {
+             list[i]=i;
+         }
+     }
+      function getRandomNum(){
+          for (var i = min; i <= numberofSongs;i++)
+          {
+              var tmp  = Math.floor(Math.random() * numberofSongs);
+          selected[i]= list.splice(tmp,1);
+      } 
+    }
+    function printList()
+    {
+        for(var i = min; i <= numberofSongs; i++)
+        {
+            document.write(selected[i]+ "<br>");
+        }
+    }
+    function mainFunction()
+    {
+        createArray();
+        getRandomNum();
+        document.write("<br>");
+        printList();
+    }
+    </script>
+    </body>
+</html>
